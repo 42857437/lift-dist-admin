@@ -1,0 +1,77 @@
+$color:#0059CB;
+$btnColor:#FF615B;
+
+$borderColor:#ECF1F4;
+.date-box,.el_box{
+  height: 32px;
+  font-size: 12px;
+  .el-input__inner{
+    height: 32px !important;
+    border-radius: 3px !important;
+    color: #191818;
+  }
+  .input__icon{
+    line-height: 38px !important;
+  }
+
+  .el-input__suffix .el-input__icon {
+    display: inline-block !important;
+    line-height: 34px;
+  }
+  .el-input__prefix{
+    left: auto;
+  }
+  .el-input--suffix {
+    font-size: 12px;
+  }
+  .el-input__inner:hover{
+    border-color: #e5e5e5;
+  }
+
+}
+
+.selectWrap{
+  .date-box{
+    width: 131px;
+    .el-input__inner{
+      width: 100% !important;
+      margin-left: 0 !important;
+      padding-left: 10px !important;
+      border: 1px solid #e5e5e5 !important;
+    }
+    .el-input__prefix{
+      right: 2px !important;
+    }
+    .el-input__icon{
+      line-height: 36px ;
+    }
+  }
+}
+
+.el-cascader,.el-input{
+  font-size: 12px;
+}
+.pagination{
+  .el-pager li.active{
+    background-color: $btnColor !important;
+  }
+}
+.el-input__inner,.el-cascader__label{
+  color: #000 !important;
+  font-size: 12px !important;
+  padding-left: 10px !important;
+}
+.qp-slide-fade-enter-active,
+.qp-slide-fade-leave-active {
+  transition: all .5s ease-in-out;
+  transform: translateY(0);
+  opacity: 1;
+}
+.qp-slide-fade-enter,
+.qp-slide-fade-leave-to
+  /* .fade-leave-active below version 2.1.8 */
+
+{
+  transform: translateY(100%);
+  opacity: 0;
+}

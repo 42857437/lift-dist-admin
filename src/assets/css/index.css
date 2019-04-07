@@ -1,0 +1,1153 @@
+html,
+body {
+  width: 100%;
+  /*min-width: 1200px;*/
+  overflow: auto;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 6px;
+  background: #E5E5E5;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background: -webkit-gradient(linear, left);
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #f2f2f2;
+}
+.posCent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.posFixed{
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0,0.3);
+}
+.mt80 {
+  margin-top: 80px !important;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.white {
+  color: #fff;
+}
+
+.c666 {
+  color: #666;
+}
+
+.c999 {
+  color: #999;
+}
+
+.blue {
+  color: #4CB8F0;
+}
+
+.primary {
+  color: red;
+}
+.theme-color {
+  color: #ff5359;
+}
+.required-color{
+  color: #ff5359;
+}
+
+.bg_f9 {
+  background-color: #f9f9f9;
+}
+.bg_fff{
+  background-color: #fff;
+}
+.fs12 {
+  font-size: 12px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.is-danger {
+  color: #ff5359;
+  font-size: 12px;
+  line-height: 17px;
+  display: block;
+  text-align: left;
+}
+.border{
+  border: 1px solid #ECF1F4;
+}
+.line {
+  height: 1px;
+  background-color: #ECF1F4;
+}
+
+input[type='text'],textarea,select{
+  transition: border-color .3s ease-in-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color: #0059CB !important;
+}
+
+select {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #c5c5c5 !important;
+}
+
+
+
+.searchWrap {
+  width: 543px;
+  height: 50px;
+}
+
+.searchSide {
+  position: relative;
+  height: 210px;
+}
+
+button.submit {
+  background-color: #8DADD6;
+  width: 110px;
+  height: 40px;
+  color: #fff;
+  margin: 50px 0;
+}
+
+/*.router-link-exact-active,*/
+/*.router-link-active {*/
+  /*color: #0059CB;*/
+/*}*/
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s;
+}
+
+.fade-enter,
+.fade-leave-to
+  /* .fade-leave-active below version 2.1.8 */
+
+{
+  opacity: 0;
+}
+
+label.checkBox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  /*display: none;修改的*/
+}
+label.checkBox input[type="checkbox"]{
+  display: none;
+}
+label.checkBox input[type="checkbox"]+span {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #D7D7D7;
+  transition: all .3s ease-in;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 6px;
+  border-radius: 4px;
+}
+
+label.checkBox input[type="checkbox"]:checked+span {
+  background-color: #FF615B;
+  border-color: #FF615B;
+}
+
+label.checkBox input[type="checkbox"]:checked+span:after {
+  content: '\A0';
+  display: inline-block;
+  border: 2px solid #fff;
+  border-top-width: 0;
+  border-right-width: 0;
+  width: 8px;
+  height: 3px;
+  transform: rotate(-50deg);
+  position: absolute;
+  top: 2px;
+  left: 1px;
+}
+
+
+.prouductInfo {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.prouductInfo>span {
+  margin-left: 20px;
+}
+
+
+/*时间选择框*/
+
+/*.search-box .el-input__inner {*/
+  /*height: 32px !important;*/
+  /*width: 182px !important;*/
+  /*border: 1px solid #ECF1F4 !important;*/
+  /*border-radius: 5px !important;*/
+  /*padding-left: 20px !important;*/
+  /*!*margin-left: 10px !important;*!*/
+  /*color: #000 !important;*/
+/*}*/
+
+/*.search-box .el-input__prefix {*/
+  /*left: auto !important;*/
+  /*right: 28px !important;*/
+/*}*/
+
+.activity-edit-date.right .el-input__inner {
+  margin-left: 0 !important;
+}
+
+.activity-edit-date.right .el-input__prefix {
+  right: 38px !important;
+}
+
+.el-input__suffix .el-input__icon {
+  /*display: none !important;*/
+}
+
+
+/*ele UI 修改*/
+
+.imgWrap .el-upload--picture-card {
+  background-color: #f2f2f2;
+  border: 1px solid #ECF1F4;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.imgWrap .el-upload--picture-card:hover,
+.imgWrap .el-upload--picture-card:focus,
+.imgCon .el-upload--picture-card:hover,
+.imgCon .el-upload--picture-card:focus {
+  border: 1px solid #0059CB !important;
+}
+
+.imgWrap .el-upload-list--picture-card .el-upload-list__item {
+  border: 1px solid #ECF1F4;
+  width: 60px;
+  height: 60px;
+  margin: 0 8px 8px 0;
+}
+
+.imgWrap .el-upload-list--picture-card .el-upload-list__item-status-label i {
+  font-size: 10px;
+  margin-top: 0px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-29deg);
+}
+
+.imgWrap .el-upload-list--picture-card .el-upload-list__item-status-label {
+  right: -15px;
+  top: -6px;
+  width: 34px;
+  height: 19px;
+  /*background: #0059CB;*/
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.car-info input
+,.work-order-info input
+, .car-info  .el-input--suffix,
+.work-order-info  .el-input--suffix,
+.work-order-info  .el-cascader,
+.car-info  .el-cascader
+{
+  width: 220px;
+  height: 32px;
+  box-sizing: border-box;
+  line-height: 32px;
+  border-radius: 3px;
+}
+.el-message {
+  min-width: auto !important;
+}
+
+.side_menu {
+  width: 180px;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  color: #fff;
+  background-color: #fff;
+}
+
+.menu_wrap {
+  position: absolute;
+  top:90px;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #666767;
+  user-select: none;
+}
+.logo_bg {
+  width: 180px;
+  height:50px;
+  overflow: hidden;
+  background: #7ba6dc;
+}
+.logo {
+  background: url(../../icons/logo.png) center/100% 100% no-repeat;
+  width: 120px;
+  height: 38px;
+  display: block;
+  margin: 6px auto 0;
+}
+
+.menu_item {
+  max-height: 51px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.menu_item .menu_title {
+  height: 51px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, .11);
+  display: flex;
+  font-size: 14px;
+  padding: 0 12px 0 35px;
+  cursor: pointer;
+  opacity: 0.6;
+  align-items: center;
+  border-left: 5px solid transparent;
+  transition: all 0.5s;
+}
+
+.menu_item .text {
+  width: 100px;
+  margin-left: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.menu_item .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.menu_item .sub_menu {
+  padding-top: 20px;
+  transform: scaleY(0);
+  transition: all 0.3s;
+  transform-origin: top center;
+}
+
+.menu_item .child_item {
+  height: 24px;
+  line-height: 24px;
+  padding-left: 68px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-left: 5px solid transparent;
+  transition: all 0.5s;
+}
+
+.menu_item.active {
+  max-height: 300px;
+}
+
+.menu_item.active .menu_title {
+  border-bottom-color: transparent;
+  opacity: 1;
+}
+
+.menu_item.active .sub_menu {
+  transform: scaleY(1);
+}
+
+.menu_item .menu_title.active {
+  border-left-color: rgba(255, 255, 255, 0.5);
+  background-color: #A17556;
+  opacity: 1;
+}
+
+.sub_menu .child_item.active {
+  background-color: #875D3E;
+}
+
+.menu_item.active .icon_arrow {
+  transform: rotate(90deg);
+}
+
+.wrap {
+  position: absolute;
+  left: 180px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  min-width: 1000px;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+}
+.header_right {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+}
+.header_right > .userInfo{
+  font-size: 12px;
+  color:#0059CB;
+  padding-right: 20px;
+}
+.header_right > .userInfo img {
+  width: 25px;
+  height: 25px;
+}
+.header_right > div img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.header_right > .loginOut {
+  width: 100px;
+  font-size: 12px;
+  border-left: 2px solid #f6f6f6;
+  cursor: pointer;
+}
+.header_right > .loginOut img {
+  width: 22px;
+  height: 22px;
+}
+
+
+.crumb {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #000;
+}
+
+.crumb .crumb_item {
+  margin-left: 25px;
+}
+
+.crumb .crumb_item.active a {
+  color: #0059CB;
+}
+.crumb .crumb_item.active i:before {
+  color: #0059CB;
+}
+
+/*.crumb .crumb_item.active .icon_arrow_r01 {*/
+/*background: url(/resources/images/arrow_r_02.png) center/100% 100%;*/
+/*}*/
+.crumb .crumb_item i {
+  margin-left: 14px;
+}
+
+.crumb .crumb_item:last-child i {
+  display: none;
+}
+
+.body {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.body  > div{
+  /*width: 100%;*/
+  height: 100%;
+}
+.main_wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 10px ;
+  height: 100%;
+}
+
+.select_wrap {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.select_wrap .label {
+  line-height: 34px;
+  width: 100px;
+  text-indent: 36px;
+  flex-shrink: 0;
+}
+.search-box{
+  padding: 30px 0;
+  border-radius: 6px;
+}
+.table_wrap{
+  margin-top: 10px;
+  border-radius: 6px;
+}
+.table_layout{
+  padding: 25px 17px  17px;
+  border-radius: 6px;
+}
+.table_scroll {
+  /*max-height: 451px;*/
+  overflow: auto;
+  /*margin: 10px 20px 20px 10px;*/
+  padding-bottom: 10px;
+
+}
+
+.table_nav ul{
+  display: flex;
+  text-align: center;
+
+}
+.table_nav li {
+  min-width: 70px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #ECF1F4;
+  border-top-right-radius: 6px;
+  border-top-left-radius:6px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #fff;
+  margin-bottom: -1px;
+}
+.table_nav li.active{
+  border-bottom-color:#fff;
+  color: #0059CB ;
+
+}
+
+/*表格*/
+
+.table {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+  border-spacing: 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.table tr,
+.table th,
+.table td {
+  border: 1px solid #ECF1F4;
+}
+
+.table thead tr {
+  background-color: #F7F7F7;
+  height: 40px;
+}
+
+.table tbody tr {
+  height: 40px;
+}
+
+.table tbody td,
+.table thead th {
+  padding:  0 20px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.table tbody td{
+
+  color: #666767;
+}
+.table td .btn{
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #8DADD6;
+  color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pagination{
+  padding: 20px 0 20px;
+}
+/*element ui样式修改*/
+.el-submenu__title {
+  height: 40px!important;
+  line-height: 40px!important;
+  position: relative;
+}
+.el-submenu__title > span{
+  width: 100%;
+  display: block;
+}
+.el-submenu__title i{
+  color: #ccc;
+}
+.el-menu-item{
+  height: 36px!important;
+  line-height: 36px!important;
+  text-indent: 23px!important;
+  text-align: left;
+  font-size: 12px!important;
+  background: transparent!important;
+  padding: 0px!important;
+}
+.el-menu-item-group__title{
+  padding: 0!important;
+}
+.el-submenu{
+  width: 100.8%!important;
+}
+.bgWhite{
+  background: #fff;
+}
+.bgC{
+  background: #f8f8f8;
+}
+.form_left{
+  line-height: 24px!important;
+}
+.w302{
+  width: 302px;
+  position: relative;
+}
+.position-ab{
+  position: absolute!important;
+  left: -15px;
+}
+.el-input__inner{
+  height: 33px!important;
+  line-height: 33px!important;
+  font-size: 12px!important;
+  color: #191818!important;
+  padding-left: 10px!important;
+}
+.wid299{
+  width: 299px!important;
+}
+
+.w288{
+  width: 299px!important;
+  height: 32px!important;
+}
+.re-10{
+  position: relative;
+  left: -10px;
+}
+.el-input__icon{
+  line-height: 37px!important;
+}
+.textArea{
+  width: 299px;
+  height: 94px;
+  resize:none;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  position: relative;
+  left: 10px;
+  padding: 10px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submitSave{
+  background-color: #FF615B;
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #fff;
+  margin: 30px 10px;
+}
+.submitCancel{
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #E0E4E8;
+  border-radius: 3px;
+  border-radius: 3px;
+  margin: 30px 10px;
+  font-family: MicrosoftYaHei;
+  font-size: 12px;
+  color: #666767;
+  letter-spacing: 0;
+}
+.ml12{
+  margin-left: 12px;
+}
+.mr12{
+  margin-right: 12px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.mtp10{
+  margin-top: 10px;
+}
+.mr9{
+  margin-right: 9px;
+}
+.textAlignL{
+  text-align: left;
+}
+.font12{
+  font-size: 12px;
+}
+.inline-Block{
+  display: inline-block!important;
+}
+.watch{
+  font-size: 12px!important;
+  cursor: pointer!important;
+  color: #FF615B!important;
+}
+.marLeft0{
+  margin-left: 0px!important;
+}
+.column{
+  height: 42px!important;
+  line-height: 42px!important;
+}
+.ml0{
+  margin-left: 0px!important;
+}
+.el-submenu__icon-arrow{
+  right: 13px!important;
+}
+.is-opened{
+  background: #FFEFEE;
+}
+.is-opened i.el-submenu__icon-arrow{
+  color: #fff;
+}
+.el-submenu__title:hover{
+  background: transparent!important;
+}
+.el-pager li.active{
+  background: #FF615B!important;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-size: 12px!important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 12px!important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 12px!important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 12px!important;
+}
+.ml16-wi299{
+  margin-left: 16px!important;
+  width: 299px!important;
+}
+th {
+  height: 40px;
+}
+td {
+  height: 40px;
+}
+.el-select-dropdown__item{
+  font-size: 12px!important;
+}
+.el-date-editor .el-input__inner{
+  padding-left:30px!important;
+}
+.form_right input{
+  height: 33px!important;
+  line-height: 33px!important;
+  font-size: 12px!important;
+  color: #191818!important;
+  padding-left: 10px!important;
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  padding: 0 15px;
+  -webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+  transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+  width: 100%;
+}
+.mr17{
+  margin-right: 17px;
+}
+.busiError{
+  position: relative;
+  top: 31px;
+}
+.l3{
+  left: -3px;
+}
+.is-opened i.el-submenu__icon-arrow{
+  color: #FF615B;
+}
+.w100l6{
+  width: 100%;
+  left: 6px!important;
+  top: -5px;
+}
+.l2t0{
+  left: 4px;
+  position: relative;
+  top: -1px;
+}
+.w91{
+  width: 91px;
+}
+.el-checkbox {
+  margin-left: 15px;
+  margin-right: 17px;
+  font-weight: normal!important;
+}
+.el-checkbox__label{
+  font-size: 12px!important;
+  color: #191818;
+  font-weight: normal!important;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+  color: #191818!important;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner{
+  border-color: #ccc!important;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: #FF615B!important;
+  border-color: #FF615B!important;
+}
+.el-checkbox__inner:hover {
+  border-color: #cccccc!important;
+}
+.ml0{
+  margin-left: 0px;
+}
+.leftHref{
+  color: #666767;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0 45px;
+  box-sizing: border-box;
+}
+.w9966{
+  width: 99.66% !important;
+}
+.f513{
+  flex: 5.13!important;
+}
+.borderl{
+  border-left:1px solid #4a4a4a!important;
+}
+.hei795{
+  height: 79.5px!important;
+  line-height: 79.5px!important;
+}
+.borderLeftNone{
+  border-left:none!important;
+}
+.floatLeft{
+  float: left!important;
+}
+.floatRight{
+  float: right!important;
+}
+.el-icon-arrow-down:before{
+  /*color: #FF615B;*/
+}
+.pr{
+  position: relative;
+  margin-left: 0px!important;
+}
+/*lable标签的大小、位置、背景颜色更改，在css选择时，“+”代表相邻元素，即当前元素的下一元素*/
+#color-input-red +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red1 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red2 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red3 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red4 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red5 +label{
+   display: block;
+   width: 12px;
+   line-height: 12px;
+   cursor: pointer;
+   position: absolute;
+   top: 15px;
+   left: 0px;
+   background: rgba(240, 84, 77, 1);
+   border-radius: 3px;
+ }
+#color-input-red6 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red7 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red8 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red9 +label{
+  display: block;
+  width: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+#color-input-red10 +label{
+  display: block;
+  width: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  background: rgba(240, 84, 77, 1);
+  border-radius: 3px;
+}
+/*当input框为选中状态时，lable标签的样式，其中在css选择时，“：”表示当前input框的值，即checked；
+      该部分主要对显示的“对号”的大限居中方式，显示颜色进行了设置*/
+#color-input-red:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red1:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red2:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red3:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red4:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red5:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red6:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red7:checked +label::before{
+   display: block;
+   content: "\2713";
+   text-align: center;
+   font-size: 12px;
+   color: white;
+}
+#color-input-red8:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red9:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+#color-input-red10:checked +label::before{
+  display: block;
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+.el-dropdown{
+  color: #4A4A4A;
+}
+.router-link-active{
+  color:rgba(240, 84, 77, 1);
+}
+.printLeftBorder{
+  border-left: 1px solid #4a4a4a!important;
+}
+.viHide{
+  visibility: hidden;
+}
+
